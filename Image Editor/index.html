@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor With Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="editor">
+        <div class="toolbar">
+            <div class="toolbar-item">
+                <input type="file" id="imageFileinput">
+            </div>
+            <div class="toolbar-item">
+                <label for="brightness" class="tool-label"> Brightness</label>
+                <input type="range" class="tool-input" id="brightness" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="saturation" class="tool-label"> Saturation</label>
+                <input type="range" class="tool-input" id="saturation" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="blur" class="tool-label"> Blur</label>
+                <input type="range" class="tool-input" id="blur" min="0" max="25">
+            </div>
+            <div class="toolbar-item">
+                <label for="inversion" class="tool-label"> Inversion</label>
+                <input type="range" class="tool-input" id="inversion" min="0" max="100">
+            </div>
+            <div class="toolbar-item">
+                <label for="contrast" class="tool-label"> Contrast</label>
+                <input type="range" class="tool-input" id="contrast" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="grayscale" class="tool-label"> Grayscale</label>
+                <input type="range" class="tool-input" id="grayscale" min="0" max="100">
+            </div>
+            <div class="toolbar-item">
+                <label for="opacity" class="tool-label"> Opacity</label>
+                <input type="range" class="tool-input" id="opacity" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="sepia" class="tool-label">Sepia </label>
+                <input type="range" class="tool-input" id="sepia" min="0" max="100">
+            </div>
+
+        </div>
+
+        <div class="image-area">
+            <canvas id="canvas" height="500" width="500"></canvas>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
