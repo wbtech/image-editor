@@ -1,6 +1,9 @@
+{
 const fileInput = document.querySelector('#imageFileinput');
 const canvas = document.querySelector('#canvas');
 const canvasCtx = canvas.getContext('2d');
+    
+    // editors
 const brightnessInput = document.querySelector('#brightness');
 const saturationInput = document.querySelector('#saturation');
 const blurInput = document.querySelector('#blur');
@@ -69,11 +72,6 @@ opacityInput.addEventListener('change', () => updateSettings('opacity', opacityI
 sepiaInput.addEventListener('change', () => updateSettings('sepia', sepiaInput.value));
 
 
-
-
-
-
-
 fileInput.addEventListener('change', () => {
     image = new Image();
 
@@ -86,3 +84,4 @@ fileInput.addEventListener('change', () => {
 })
 
 resetSettings();
+}
