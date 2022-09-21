@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #dae1ce;
+    
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#imageFileinput{
+    margin: 5px;
+    padding: 5px;
+}
+.toolbar {
+    width: 25rem;
+    background: #9bc1bc;
+}
+
+.toolbar-item {
+    padding: 10px;
+    margin: 10px;
+}
+
+.tool-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.tool-input {
+    width: 100%;
+}
+
+.image-area {
+    flex-grow: 1;
+    padding: 20px;
+    background: #99a883;
+}
+
+#canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .toolbar {
+        width: 30rem;
+        background: #9bc1bc;
+    }
+    .toolbar-item {
+        padding: 2px;
+    }
+}
