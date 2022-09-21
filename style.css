@@ -62,6 +62,6 @@ body {
         background: #9bc1bc;
     }
     .toolbar-item {
-        padding: 2px;
+        padding: 2px 0 2px 0;
     }
 }
