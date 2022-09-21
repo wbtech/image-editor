@@ -1,21 +1,32 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #dae1ce;
+    
 }
 
-.editor {
+.container {
     display: flex;
     width: 100vw;
     height: 100vh;
 }
-
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+#imageFileinput{
+    margin: 5px;
+    padding: 5px;
+}
 .toolbar {
-    width: 250px;
+    width: 25rem;
     background: #9bc1bc;
 }
 
 .toolbar-item {
     padding: 10px;
+    margin: 10px;
 }
 
 .tool-label {
@@ -32,7 +43,7 @@ body {
 .image-area {
     flex-grow: 1;
     padding: 20px;
-    background: #ddab89;
+    background: #99a883;
 }
 
 #canvas {
@@ -41,10 +52,14 @@ body {
 }
 
 @media (max-width: 700px) {
-    .toolbar {
+    .container{
         display: flex;
         flex-direction: column;
-        flex-flow: wrap;
+    }
+   
+    .toolbar {
+        width: 30rem;
+        background: #9bc1bc;
     }
     .toolbar-item {
         padding: 2px;
