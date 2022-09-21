@@ -11,7 +11,13 @@
 </head>
 
 <body>
-    <div class="editor">
+     <div class="container">
+        <div class="box">
+            <div class="image-area">
+                <canvas id="canvas" height="500" width="500"></canvas>
+            </div>
+        </div>
+
         <div class="toolbar">
             <div class="toolbar-item">
                 <input type="file" id="imageFileinput">
@@ -48,15 +54,8 @@
                 <label for="sepia" class="tool-label">Sepia </label>
                 <input type="range" class="tool-input" id="sepia" min="0" max="100">
             </div>
-
-        </div>
-
-        <div class="image-area">
-            <canvas id="canvas" height="500" width="500"></canvas>
         </div>
     </div>
-
-
 </body>
 
 </html>
