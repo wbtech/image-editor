@@ -1,4 +1,3 @@
 # image-editor
 Image editor repository!
-updated
-it's available online
+https://walebee01.github.io/image-editor/
