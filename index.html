@@ -1,145 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furnitures</title>
-
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/media.css">
+    <title>Image Editor With Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body class="main_content ">
-        <!--  header  -->
-        <header class="section header  sec1 active" id="home">
-            <div class="home">
-                <div class="home-wrapper">
-                    <h1>Home of exquisite furniture</h1>
-                    <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut rerum
-                    saepe reprehenderit temporibus architecto, hic eius aperiam
-                    voluptatem nulla minus?
-                    </p>
-                    <input type="button"  value="get started" data-id="gallery"/>
-                </div>
-                <img src="/images/comfy.svg" alt="Net Error"  />
-                
+
+<body>
+    <div class="container">
+        <div class="box">
+            
+            <div class="image-area">
+                <canvas id="canvas" height="500" width="500"></canvas>
             </div>
-        </header>
+        </div>
 
-        <main>
-            <section class="section sec2 " id="about">     
-                <div class="about">
-                <div class="about-image">
-                    <img src="/images/VIP.svg" alt="" height="400" width="400"/>
-                  </div>
-          
-                  <div class="about-page">
-                    <h2>A World About Us</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sint
-                      illum similique mollitia facere maiores nemo saepe repellendus enim,
-                      debitis perspiciatis dolore deleniti. Vel quos aliquid impedit
-                      neque.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsa
-                      dolore ex aut maiores perferendis a doloribus aliquid vitae natus.
-                    </p>
-          
-                    <input type="button" value="learn more" />
-                  </div>
-                </div> 
-            </section>
-    
-            <section class="section sec4 " id="gallery">
-               <div id="galleryRender" class="galleryRender">
+        <div class="toolbar">
+            <div class="toolbar-item">
+                <input type="file" id="imageFileinput">
+            </div>
+            <div class="toolbar-item">
+                <label for="brightness" class="tool-label"> Brightness</label>
+                <input type="range" class="tool-input" id="brightness" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="saturation" class="tool-label"> Saturation</label>
+                <input type="range" class="tool-input" id="saturation" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="blur" class="tool-label"> Blur</label>
+                <input type="range" class="tool-input" id="blur" min="0" max="25">
+            </div>
+            <div class="toolbar-item">
+                <label for="inversion" class="tool-label"> Inversion</label>
+                <input type="range" class="tool-input" id="inversion" min="0" max="100">
+            </div>
+            <div class="toolbar-item">
+                <label for="contrast" class="tool-label"> Contrast</label>
+                <input type="range" class="tool-input" id="contrast" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="grayscale" class="tool-label"> Grayscale</label>
+                <input type="range" class="tool-input" id="grayscale" min="0" max="100">
+            </div>
+            <div class="toolbar-item">
+                <label for="opacity" class="tool-label"> Opacity</label>
+                <input type="range" class="tool-input" id="opacity" min="0" max="200">
+            </div>
+            <div class="toolbar-item">
+                <label for="sepia" class="tool-label">Sepia </label>
+                <input type="range" class="tool-input" id="sepia" min="0" max="100">
+            </div>
 
-               </div>
-            </section>
-    
-            <section class="section sec5 contact" id="contact">
-              <div class="contactpage">
+        </div>
 
-                <div class="order-content">
-                  <form action="#" class="order-form" autocomplete="off">
-                    <input type="text" placeholder="name" required />
-                    <input type="email" placeholder="email" required />
-                    <input type="number" placeholder="phone Number" required />
-                    <textarea cols="30" rows="8" placeholder="address"></textarea>
-        
-                    <button type="submit">Send</button>
-                  </form>
-                </div>
-                <div class="contactRender">
-                  <div class="contact-info">
-                    <h4>contact info</h4>
-                    <p>
-                      <img src="/images/house-2.svg" alt="" width="20" height="20"> <span>   174, wood road</span>
-                    </p>
-                    <p>
-                      <img src="/images/message.svg" alt="" width="20" height="20">  <span>   phurniture@gmail.com</span></p>
-                    <p><img src="/images/phone.svg"  width="20" height="20" /><span>   +776883649</span></p>
-                  </div>
-
-                    <div class="quick-links">
-                        <h4>quick links</h4>
-                        <ul>
-                          <li><a href="#home">home</a></li>
-                          <li><a href="#about">about</a></li>
-                          <li><a href="#gallery">gallery</a></li>
-                          <li><a href="#contact">contact</a></li>
-                        </ul>
-                      </div>
-
-                    <div class="follow-us">
-                        <h4>follow us</h4>
-                        <ul>
-                          <li>
-                            <a href="https://www.facebook.com" target="blank">facebook</a>
-                          </li>
-                          <li>
-                            <a href="https://www.instagram.com" target="blank">instagram</a>
-                          </li>
-                          <li><a href="https://www.twitter.com" target="blank">twitter</a></li>
-                          <li>
-                            <a href="https://www.linkedin.com" target="blank">linkedin</a>
-                          </li>
-                        </ul>
-                    </div>
-                  </div>
-              
-                  <footer
-                    <div class="copyright">
-                      <p>Copyright 2022 || &copy all right reserved.</p>
-                    </div>
-                  </footer>
-              </div>
-            </section>
-        </main>
        
-  <div class="header-box">
-    <div class="image-logo">
-        <img src="/images/figma.svg" alt="" height="40" width="40">
     </div>
 
-    <div class="links">
-        <div class="link link1  activeBtn" data-id="home">Home
-        </div>
-        <div class="link link2" data-id="about">About
-        </div>
-        <div class="link link4" data-id="gallery"> Gallery
-        </div>
-        <div class="link link5" data-id="contact">Contact
-        </div>
-    </div>
 
-    <div id="menu-bar" class="fas fa-bars"  >
-        <img src="/images/menu.svg" alt="menu" height="30px" width="30px" >
-    </div>
-
-</div>
-    <script src="/furnitureArray.js"></script>
-    <script src="script.js"></script>
 </body>
+
 </html>
