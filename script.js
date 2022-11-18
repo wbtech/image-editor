@@ -52,7 +52,6 @@ function generateFilter() {
     return `brightness(${brightness}%) saturate(${saturation}%)  blur(${blur}px) invert(${inversion}%) contrast(${contrast}%) grayscale(${grayscale}%) opacity(${opacity}%) sepia(${sepia}%)`;
 }
 
-
 function renderImage() {
     canvas.width = image.width;
     canvas.height = image.height;
