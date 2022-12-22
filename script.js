@@ -82,5 +82,6 @@ fileInput.addEventListener('change', () => {
 
 })
 
+//reset
 resetSettings();
 }
